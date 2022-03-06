@@ -1,6 +1,7 @@
-body {
-    background-image: url("/assets/rickastleybackground1250.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+.bg-image {
+  background-image: url("/assets/rickastleybackground1250.jpg");
+  backdrop-filter: blur(10px);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   }

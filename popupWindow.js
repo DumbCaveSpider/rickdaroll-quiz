@@ -1,4 +1,4 @@
-function popupWindow(url) {
+function popupWindow() {
   window.open(
     "/quiz/1.html",
     "toolbar=no",

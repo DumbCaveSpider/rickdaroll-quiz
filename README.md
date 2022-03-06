@@ -1,1 +1,0 @@
-# rickdaroll-quiz

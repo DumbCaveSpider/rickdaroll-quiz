@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>RICK DA ROLL</title>
+  <title>RICKDAROLL Quiz Hub</title>
   <meta property="og:type" content="rickdaroll.com" />
   <meta property="og:title" content="RICK DA ROLL (Not Rick Rolling You For Real)" />
   <meta property="og:description"
@@ -20,20 +20,22 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <!-- popup script -->
-<script src="/popupWindow.js"></script>
+<script src="/"></script>
 <!-- popup script -->
 <script src="/private/passcode-totally-secret.js"></script>
 <!-- disable keys -->
 <script src="/disabled/disablekeys.js"></script>
 
 <body class="bg-image">
-  <div class="container p-5" style="
+  <div class="container  p-5" style="
     text-align: center;
     color: white;
     text-shadow: 0 0 3px #36426a, 0 0 5px #c2a49c;
     ">
-    <h1>Welcome to RICKDAROLL Quiz Hub</h1>
-    <p>Please pick which quiz you would like to do.</p>
+    <div class="mt-4 p-5 bg-dark text-white rounded">
+      <h1>Welcome to RICKDAROLL Quiz Hub</h1>
+      <p>Please pick which quiz you would like to do.</p>
+    </div>
     <hr />
     <div id="accordion">
 
@@ -55,22 +57,26 @@
               in other way.</p>
             <img src="/assets/ult-preview1.png" class="img-thumbnail" width="100%">
             <hr />
-            <a onclick="popupWindow(this.href)" href="" class="btn btn-outline-light"><strong>Play Quiz</strong></a>
-            <hr/>
-            <p>If you have a code that you saved during the quiz, you can enter the code below and click "Resume Quiz"</p>
+            <p>You can start the quiz from the Beginning by click "Play Quiz" below.
+            </p>
+            <button onclick="popupWindow(this.href)" href="/remind/popupperms.html" type="button" class="btn btn-outline-light"><strong>Play
+                Quiz</strong></button>
+            <hr />
+            <p>If you have a code that you saved during the quiz, you can enter the code below and click "Resume Quiz"
+            </p>
             <form>
               <div class="form-floating mt-3 mb-3">
                 <input type="password" style="color: white;" class="form-control bg-dark" id="pswd" name="pswd">
                 <label for="pswd">Quiz Code</label>
               </div>
-              <button class="btn btn-outline-primary" type="button" value="Submit" onclick="checkPswd();">Resume Quiz</button>
+              <button class="btn btn-outline-primary" type="button" value="Submit" onclick="checkPswd();">Resume
+                Quiz</button>
             </form>
           </div>
         </div>
       </div>
     </div>
     <hr />
-    <a href="https://rickdaroll.com"
-      class="btn btn-outline-danger"><strong>Return</strong></a>
+    <a href="https://rickdaroll.com" class="btn btn-outline-danger"><strong>Return</strong></a>
   </div>
 </body>

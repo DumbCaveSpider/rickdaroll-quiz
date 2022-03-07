@@ -58,6 +58,7 @@
   </div>
   </div>
   <hr />
+  <!-- actions buttons -->
   <div class="container p-3">
     <h4
       style="color: white; text-align: left; text-decoration: underline; text-shadow: 0 0 3px #36426a, 0 0 5px #c2a49c;">
@@ -66,7 +67,11 @@
       Suicide</button>
     <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#restart">🔁 Restart to
       Beginning</button>
-    <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#quit">🚶 Quit</a>
+    <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#moves">📃 Actions
+      Logs</button>
+    <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#map">🗺️ View
+      Map</button>
+    <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#quit">🚶 Quit</button>
   </div>
 
   <!-- commit die prompt -->
@@ -94,7 +99,6 @@
           <a href="/quiz/1.html" class="btn btn-success">Yes, travel me back in time</a>
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Nah, I can stay here</button>
         </div>
-
       </div>
     </div>
   </div>
@@ -109,10 +113,62 @@
           <a href="#" onclick="javascript:window.close()" class="btn btn-success">Yes, get me out of here!</a>
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No... just continue</button>
         </div>
-
       </div>
     </div>
   </div>
+  <!-- moves prompt -->
+  <div class="modal fade" id="moves">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>📃 Actions Logs</h4>
+        </div>
+        <div class="modal-body">
+          There's no significant events happened during the run.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- map prompt -->
+  <div class="modal fade" id="map">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>🗺️ Quiz Map</h4>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          <figure class="zoom" onmousemove="zoom(event)" style="background-image: url(/assets/rickrollmap.png)">
+            <img src="/assets/emptymap.png" />
+          </figure>
+          <script type="text/javascript">
+            function zoom(e) {
+              var zoomer = e.currentTarget;
+              e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
+              e.offsetY ? offsetY = e.offsetY : offsetX = e.touches[0].pageX
+              x = offsetX / zoomer.offsetWidth * 100
+              y = offsetY / zoomer.offsetHeight * 100
+              zoomer.style.backgroundPosition = x + '% ' + y + '%';
+            }
+          </script>
+          <!-- zoom function -->
+          <style media="screen">
+            figure.zoom {
+              position: relative;
+              border: 5px solid black;
+              width: 100%;
+              overflow: hidden;
+              cursor: zoom-in;
+            }
+
+            figure.zoom img {
+              display: block;
+              width: 100%;
+            }
+          </style>
 </body>
 
 </html>

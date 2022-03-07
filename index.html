@@ -68,6 +68,42 @@
               class="btn btn-outline-light disabled"><strong>Play
                 Quiz</strong></a>
             <hr />
+            <p>You can view the whole quiz map or path that this will offer. It might be confusing but that what it
+              should be.</p>
+            <button type="button" class="btn btn-outline-light dropdown-toggle m-3" data-bs-toggle="collapse"
+              data-bs-target="#map"><strong>View Map</strong></button>
+            <!-- map prompt -->
+            <div id="map" class="collapse">
+              <figure class="zoom" onmousemove="zoom(event)" style="background-image: url(/assets/rickrollmap.png)">
+                <img src="/assets/emptymap.png" />
+              </figure>
+              <script type="text/javascript">
+                function zoom(e) {
+                  var zoomer = e.currentTarget;
+                  e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
+                  e.offsetY ? offsetY = e.offsetY : offsetX = e.touches[0].pageX
+                  x = offsetX / zoomer.offsetWidth * 100
+                  y = offsetY / zoomer.offsetHeight * 100
+                  zoomer.style.backgroundPosition = x + '% ' + y + '%';
+                }
+              </script>
+              <!-- zoom function -->
+              <style media="screen">
+                figure.zoom {
+                  position: relative;
+                  border: 5px solid black;
+                  width: 100%;
+                  overflow: hidden;
+                  cursor: zoom-in;
+                }
+
+                figure.zoom img {
+                  display: block;
+                  width: 100%;
+                }
+              </style>
+            </div>
+            <hr />
             <p>If you have a code that you saved during the quiz, you can enter the code below and click "Resume Quiz"
             </p>
             <form>

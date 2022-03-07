@@ -27,7 +27,7 @@
 <script src="/disabled/disablekeys.js"></script>
 <!-- bg music -->
 <audio autoplay loop>
-  <source src="/assets/audio/nevergonnagiveyouup-lofi.mp3 type="audio/mpeg" />
+  <source src="/assets/audio/nevergonnagiveyouup-lofi.mp3" type="audio/mpeg" />
 </audio>
 
 <body class="bg-image">
@@ -63,8 +63,9 @@
             <hr />
             <p>You can start the quiz from the Beginning by click "Play Quiz" below.
             </p>
+            <p><sub>Still work in progress. Just still coding the whole game lol.</sub></p>
             <a onclick="popupWindow(this.href)" href="/remind/popupperms.html" type="button"
-              class="btn btn-outline-light"><strong>Play
+              class="btn btn-outline-light disabled"><strong>Play
                 Quiz</strong></a>
             <hr />
             <p>If you have a code that you saved during the quiz, you can enter the code below and click "Resume Quiz"
@@ -72,7 +73,7 @@
             <form>
               <div class="form-floating mt-3 mb-3">
                 <input type="password" style="color: white;" class="form-control bg-dark" id="pswd" name="pswd">
-                <label for="pswd">Quiz Code</label>
+                <label for="pswd">Quiz Code | cAse sEnsItiVE</label>
               </div>
               <button class="btn btn-outline-primary" type="button" value="Submit" onclick="checkPswd();">Resume
                 Quiz</button>

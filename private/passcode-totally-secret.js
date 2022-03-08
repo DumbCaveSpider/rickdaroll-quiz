@@ -1,6 +1,6 @@
 function checkPswd() {
     // passcode lol
-    var check1 = "preview";
+    var preview = "preview";
     var check1 = "rickhascringe";
     var check2 = "ShopPortalA";
     // checking passcode

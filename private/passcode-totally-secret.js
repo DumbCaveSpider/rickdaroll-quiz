@@ -7,7 +7,7 @@ function checkPswd() {
     var password = document.getElementById("pswd").value;
     if (password == preview) {
         window.open(
-            "/quiz/1.html",
+            "/quiz/1",
             "toolbar=no",
             "location=no",
             "directories=no",
@@ -21,7 +21,7 @@ function checkPswd() {
     }
     if (password == check1) {
         window.open(
-            "/quiz/16.html",
+            "/quiz/16",
             "toolbar=no",
             "location=no",
             "directories=no",
@@ -35,7 +35,7 @@ function checkPswd() {
     }
     if (password == check2) {
         window.open(
-            "/quiz/portal/a.html",
+            "/quiz/portal/a",
             "toolbar=no",
             "location=no",
             "directories=no",

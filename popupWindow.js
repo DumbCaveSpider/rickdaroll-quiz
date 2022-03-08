@@ -1,6 +1,6 @@
 function popupWindow() {
   window.open(
-    "/quiz/1.html",
+    "/quiz/1",
     "toolbar=no",
     "location=no",
     "directories=no",

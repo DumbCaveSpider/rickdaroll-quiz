@@ -13,6 +13,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
+<!-- time -->
+<script src="/timer/10sec.js"></script>
+<!-- time til end -->
+<meta http-equiv="refresh" content="10; URL=/quiz/end/to" />
+
 <!-- disable hightlighting -->
 <link href="/disabled/disablehighlight.css" rel="stylesheet" />
 <!-- disable keys -->
@@ -22,21 +27,23 @@
   <div class="container">
     <!-- bg music -->
     <audio autoplay loop>
-      <source src="/assets/audio/nevergonnagiveyouup.mp3" type="audio/mpeg" />
+      <source src="/assets/audio/kahootremix.mp3" type="audio/mpeg" />
     </audio>
     <!-- progress bar -->
     <div class="p-3">
       <sup style="color: white; text-align: left; text-shadow: 0 0 3px #36426a, 0 0 5px #c2a49c;">Time
-        Left: <strong>Unlimited</strong></sup>
+        Left: <progress value="0" max="10" id="progressBar"></sup>
     </div>
     <!-- question prompt -->
     <div style="position:relative">
-      <img draggable="false" id="main-image" src="/q-img/Slide16.gif" class="img-thumbnail" width="100%">
+      <img draggable="false" id="main-image" src="/q-img/Slide18.PNG" class="img-thumbnail" width="100%">
       <!-- answers -->
-      <a href="/quiz/end/4" class="rim-hotspot"
-        style="width:82.0%; height:16.2%; left:9.2%; top:67.0%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
-      <a href="/quiz/16" class="rim-hotspot"
-        style="width:20.2%; height:14.5%; left:39.8%; top:52.3%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/18" class="rim-hotspot"
+        style="width:35.4%; height:8.9%; left:56.1%; top:44.7%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/7" class="rim-hotspot"
+        style="width:28.2%; height:9.2%; left:59.6%; top:60.6%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/6" class="rim-hotspot"
+        style="width:34.5%; height:8.7%; left:56.5%; top:28.7%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
     </div>
   </div>
   <hr />

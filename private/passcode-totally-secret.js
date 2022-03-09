@@ -21,7 +21,7 @@ function checkPswd() {
     }
     if (password == check1) {
         window.open(
-            "/quiz/16",
+            "/quiz/checkpoint1",
             "toolbar=no",
             "location=no",
             "directories=no",

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="disable-text">
+
+<head>
+  <title>RICK DA ROLL</title>
+  <link rel="icon"
+    href="https://cdn.glitch.global/4369b1c2-cf4c-4844-a3af-258f1c4d8627/2b00d287-b6ea-49f5-9772-0dcf68718be3.image.png?v=1645719617306"
+    type="image/png" sizes="16x16" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="/background.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<!-- disable hightlighting -->
+<link href="/disabled/disablehighlight.css" rel="stylesheet" />
+<!-- disable keys -->
+<script src="/disabled/disablekeys.js"></script>
+
+<!-- time -->
+<script src="/timer/5sec.js"></script>
+<!-- time til end -->
+<meta http-equiv="refresh" content="5; URL=/quiz/end/to" />
+
+<body class="bg-image">
+  <div class="container">
+    <!-- bg music -->
+    <audio autoplay loop>
+      <source src="/assets/audio/nevergonnagiveyouup.mp3" type="audio/mpeg" />
+    </audio>
+    <!-- progress bar -->
+    <div class="p-3">
+      <sup style="color: white; text-align: left; text-shadow: 0 0 3px #36426a, 0 0 5px #c2a49c;">Time
+        Left: </sup><progress value="0" max="5" id="progressBar"></progress>
+    </div>
+    <!-- question prompt -->
+    <div style="position:relative">
+      <img draggable="false" id="main-image" src="/q-img/Slide15.PNG" class="img-thumbnail" width="100%">
+      <!-- answers -->
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:7.9%; height:19.1%; left:87.8%; top:71.8%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:6.9%; height:19.0%; left:77.3%; top:75.9%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:7.7%; height:17.5%; left:31.0%; top:78.9%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:8.8%; height:18.3%; left:61.8%; top:75.6%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:10.6%; height:17.8%; left:48.9%; top:74.8%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:7.5%; height:17.8%; left:38.6%; top:59.2%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:7.3%; height:19.0%; left:24.5%; top:62.9%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:8.9%; height:18.8%; left:9.3%; top:73.4%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:8.1%; height:18.5%; left:82.1%; top:50.0%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:8.5%; height:19.5%; left:68.7%; top:53.1%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:8.6%; height:18.5%; left:58.0%; top:53.5%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:8.5%; height:19.1%; left:46.3%; top:44.2%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:9.8%; height:20.0%; left:31.0%; top:38.9%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/checkpoint1" class="rim-hotspot"
+        style="width:8.4%; height:18.2%; left:20.1%; top:37.6%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:9.3%; height:17.8%; left:4.9%; top:49.0%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:9.8%; height:18.8%; left:87.7%; top:20.3%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:8.6%; height:20.0%; left:77.3%; top:25.6%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:9.1%; height:18.2%; left:63.2%; top:31.0%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:8.4%; height:19.6%; left:50.7%; top:19.1%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:8.5%; height:18.6%; left:34.6%; top:17.3%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:8.9%; height:18.5%; left:21.8%; top:19.5%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:10.2%; height:19.1%; left:7.7%; top:21.6%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/1" class="rim-hotspot"
+        style="width:3.0%; height:5.9%; left:14.0%; top:2.8%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+    </div>
+  </div>
+  <hr />
+  <!-- actions buttons -->
+  <div class="container p-3">
+    <h4
+      style="color: white; text-align: left; text-decoration: underline; text-shadow: 0 0 3px #36426a, 0 0 5px #c2a49c;">
+      Actions</h4>
+    <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#commitdie">☠️ Commit
+      Suicide</button>
+    <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#restart">🔁 Restart to
+      Beginning</button>
+    <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#moves">📃 Actions
+      Logs</button>
+    <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#map">🗺️ View
+      Map</button>
+    <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#quit">🚶 Quit</button>
+  </div>
+
+  <!-- commit die prompt -->
+  <div class="modal fade" id="commitdie">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          Are you sure you want to <strong>Commit Suicide?</strong>
+        </div>
+        <div class="modal-footer">
+          <a href="/quiz/end/2" class="btn btn-success">Yes, I hate myself</a>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No, I want to live</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- restart prompt -->
+  <div class="modal fade" id="restart">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          Are you sure you want to <strong>Restart to Beginning?</strong>
+        </div>
+        <div class="modal-footer">
+          <a href="/quiz/1" class="btn btn-success">Yes, travel me back in time</a>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Nah, I can stay here</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- quit prompt -->
+  <div class="modal fade" id="quit">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          Are you sure you want to <strong>Quit?</strong>
+        </div>
+        <div class="modal-footer">
+          <a href="#" onclick="javascript:window.close()" class="btn btn-success">Yes, get me out of here!</a>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No... just continue</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- moves prompt -->
+  <div class="modal fade" id="moves">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>📃 Actions Logs</h4>
+        </div>
+        <div class="modal-body">
+          <li>You voted Rick as a President.</li>
+          <li>You say goodbye to Rick as he evicted you out of the country.</li>
+          <li>Rick has kidnapped you as you attempted to desert you.</li>
+          <li>You been forced to be a Discord Moderator but you got distracted and got fired by Rick.</li>
+          <li>You passed your test! Congrats!</li>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- map prompt -->
+  <div class="modal fade" id="map">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>🗺️ Quiz Map</h4>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          <figure class="zoom" onmousemove="zoom(event)" style="background-image: url(/assets/rickrollmap.png)">
+            <img src="/assets/emptymap.png" />
+          </figure>
+          <script type="text/javascript">
+            function zoom(e) {
+              var zoomer = e.currentTarget;
+              e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
+              e.offsetY ? offsetY = e.offsetY : offsetX = e.touches[0].pageX
+              x = offsetX / zoomer.offsetWidth * 100
+              y = offsetY / zoomer.offsetHeight * 100
+              zoomer.style.backgroundPosition = x + '% ' + y + '%';
+            }
+          </script>
+          <!-- zoom function -->
+          <style media="screen">
+            figure.zoom {
+              position: relative;
+              border: 5px solid black;
+              width: 100%;
+              overflow: hidden;
+              cursor: zoom-in;
+            }
+
+            figure.zoom img {
+              display: block;
+              width: 100%;
+            }
+          </style>
+</body>
+
+</html>

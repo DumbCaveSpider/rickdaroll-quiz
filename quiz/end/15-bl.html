@@ -13,13 +13,11 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7280297587085417"
     crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="/background.css" rel="stylesheet" />
+  <link href="/quiz/end/black.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 
-<!-- time -->
-<script src="/timer/5sec.js"></script>
-<!-- time til end -->
-<meta http-equiv="refresh" content="5; URL=/quiz/31" />
 <!-- disable hightlighting -->
 <link href="/disabled/disablehighlight.css" rel="stylesheet" />
 <!-- disable keys -->
@@ -27,17 +25,21 @@
 
 <body class="bg-image">
   <div class="container">
-    <!-- progress bar -->
-    <div class="p-3">
-      <sup style="color: white; text-align: left; text-shadow: 0 0 3px #36426a, 0 0 5px #c2a49c;">Time
-        Left: </sup><progress value="0" max="5" id="progressBar"></progress>
-    </div>
+    <!-- bg music -->
+    <audio autoplay loop>
+      <source src="/assets/audio/nevergonnagiveyouup-sad.mp3" type="audio/mpeg" />
+    </audio>
     <!-- question prompt -->
-    <video autoplay class="img-thumbnail" name="media" width="100%" height="570">
-      <source src="/assets/video/gonnmakeyoudie.mp4" type="video/mp4" />
-    </video>
-    <!-- answers, theres none -->
-  </div>
+    <div style="position:relative">
+      <img draggable="false" id="main-image" src="/assets/deathscreen/rickhascringe.png" class="mt-5" width="100%">
+      <!-- answers -->
+      <a draggable="false" data-bs-toggle="modal" data-bs-target="#checkpoint" class="rim-hotspot"
+        style="width:25.6%; height:20.8%; left:40.7%; top:72.6%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a draggable="false" data-bs-toggle="modal" data-bs-target="#quit" class="rim-hotspot"
+        style="width:16.4%; height:17.3%; left:74.0%; top:73.9%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a draggable="false" data-bs-toggle="modal" data-bs-target="#restart" class="rim-hotspot"
+        style="width:35.3%; height:18.6%; left:1.5%; top:73.1%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+    </div>
   </div>
   <hr />
   <!-- actions buttons -->
@@ -45,19 +47,44 @@
     <h4
       style="color: white; text-align: left; text-decoration: underline; text-shadow: 0 0 3px #36426a, 0 0 5px #c2a49c;">
       Actions</h4>
-    <button type="button" class="btn btn-secondary btn-lg disabled" data-bs-toggle="modal" data-bs-target="#commitdie">☠️
-      Commit
+    <button type="button" class="btn btn-secondary btn-lg disabled" data-bs-toggle="modal"
+      data-bs-target="#commitdie">☠️ Commit
       Suicide</button>
-    <button type="button" class="btn btn-success btn-lg disabled" data-bs-toggle="modal" data-bs-target="#restart">🔁 Restart
-      to
+    <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#restart">🔁 Restart to
       Beginning</button>
-    <button type="button" class="btn btn-warning btn-lg disabled" data-bs-toggle="modal" data-bs-target="#moves">📃 Actions
+    <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#moves">📃
+      Actions
       Logs</button>
     <button type="button" class="btn btn-dark btn-lg disabled" data-bs-toggle="modal" data-bs-target="#map">🗺️ View
       Map</button>
     <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#quit">🚶 Quit</button>
   </div>
-
+  <!-- ads -->
+  <div class="container p-3">
+    <h4
+      style="color: white; text-align: left; text-decoration: underline; text-shadow: 0 0 3px #36426a, 0 0 5px #c2a49c;">
+      Advertisement</h4>
+    <!-- Actions Ads -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7280297587085417" data-ad-slot="6886229553"
+      data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+  <!-- checkpoint prompt -->
+  <div class="modal fade" id="checkpoint">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          Are you sure you want to <strong>Go back to Checkpoint?</strong>
+        </div>
+        <div class="modal-footer">
+          <a href="/quiz/16" class="btn btn-success">Yes, bring me back to there.</a>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Nope</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- commit die prompt -->
   <div class="modal fade" id="commitdie">
     <div class="modal-dialog modal-dialog-centered">
@@ -66,7 +93,7 @@
           Are you sure you want to <strong>Commit Suicide?</strong>
         </div>
         <div class="modal-footer">
-          <a href="/quiz/end/2" class="btn btn-success">Yes, I hate myself</a>
+          <a href="/quiz/end/2.html" class="btn btn-success">Yes, I hate myself</a>
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No, I want to live</button>
         </div>
       </div>
@@ -114,9 +141,7 @@
           <li>You been forced to be a Discord Moderator but you got distracted and got fired by Rick.</li>
           <li>You passed your test! Congrats!</li>
           <li>You completed the legacy quiz (1-15)</li>
-          <hr />
-          <li>You successfully applied for GWR</li>
-          <li>You helped rick shot the cringe rat on the floor. epico</li>
+          <li>Rick has developed cringe from your actions, he says goodbye to you.</li>
           <hr />
           <strong>Saved Code:</strong>
           <li>rickhascringe <i>(Resumes to Checkpoint)</i></li>
@@ -164,6 +189,10 @@
               width: 100%;
             }
           </style>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

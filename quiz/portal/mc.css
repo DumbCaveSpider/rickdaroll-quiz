@@ -1,0 +1,6 @@
+.bg-image {
+  background-image: url("/assets/mcbg-blur.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }

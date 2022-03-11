@@ -18,11 +18,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<!-- time -->
-<script src="/timer/10sec.js"></script>
-<!-- time til end -->
-<meta http-equiv="refresh" content="10; URL=/quiz/end/tocp" />
-
 <!-- disable hightlighting -->
 <link href="/disabled/disablehighlight.css" rel="stylesheet" />
 <!-- disable keys -->
@@ -37,16 +32,20 @@
     <!-- progress bar -->
     <div class="p-3">
       <sup style="color: white; text-align: left; text-shadow: 0 0 3px #36426a, 0 0 5px #c2a49c;">Time
-        Left: <progress value="0" max="10" id="progressBar"></sup>
+        Left: <strong>Unlimited</strong></sup>
     </div>
     <!-- question prompt -->
     <div style="position:relative">
-      <img draggable="false" id="main-image" src="/q-img/Slide28.PNG" class="img-thumbnail" width="100%">
+      <img draggable="false" id="main-image" src="/q-img/Slide34.PNG" class="img-thumbnail" width="100%">
       <!-- answers -->
-      <a href="/quiz/28" class="rim-hotspot"
-        style="width:30.1%; height:9.4%; left:57.4%; top:82.8%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
-      <a href="/quiz/30b" class="rim-hotspot"
-        style="width:32.3%; height:9.4%; left:12.5%; top:82.5%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/16" class="rim-hotspot"
+        style="width:50.9%; height:8.9%; left:6.8%; top:76.7%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/16" class="rim-hotspot"
+        style="width:12.3%; height:9.2%; left:26.1%; top:60.7%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/end/16" class="rim-hotspot"
+        style="width:8.1%; height:9.6%; left:28.3%; top:44.6%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
+      <a href="/quiz/33" class="rim-hotspot"
+        style="width:1.9%; height:3.1%; left:84.5%; top:41.7%; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;"></a>
     </div>
   </div>
   <hr />
@@ -55,9 +54,11 @@
     <h4
       style="color: white; text-align: left; text-decoration: underline; text-shadow: 0 0 3px #36426a, 0 0 5px #c2a49c;">
       Actions</h4>
-    <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#commitdie">☠️ Commit
+    <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#commitdie">☠️
+      Commit
       Suicide</button>
-    <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#restart">🔁 Restart to
+    <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#restart">🔁 Restart
+      to
       Beginning</button>
     <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#moves">📃 Actions
       Logs</button>
@@ -124,6 +125,8 @@
           <li>You completed the legacy quiz (1-15)</li>
           <hr />
           <li>You successfully applied for GWR</li>
+          <li>You helped rick shot the cringe rat on the floor. epico</li>
+          <li>Rick shot you because you force him to eat egg again.</li>
           <hr />
           <strong>Saved Code:</strong>
           <li>rickhascringe <i>(Resumes to Checkpoint)</i></li>

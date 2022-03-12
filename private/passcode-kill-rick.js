@@ -1,6 +1,6 @@
 function passcodeChk() {
     // passcode lol
-    var kill = "pewpewrick";
+    var kill = "rickgivesupshot";
     // checking passcode
     var password = prompt("Please enter the password to unlock the page:");
     if (password == kill) {

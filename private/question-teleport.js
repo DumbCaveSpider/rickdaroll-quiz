@@ -31,7 +31,8 @@ function questionNum() {
     var q27 = "27";
     var q28 = "28";
     var q29 = "29";
-    var q30 = "30";
+    var q30a = "30a";
+    var q30b = "30b";
     var q31 = "31";
     var q32 = "32";
     var q33 = "33";
@@ -180,8 +181,12 @@ function questionNum() {
         window.location = "/quiz/29"
         return;
     }
-    if (numQ == q30) {
-        window.location = "/quiz/30"
+    if (numQ == q30a) {
+        window.location = "/quiz/30a"
+        return;
+    }
+    if (numQ == q30b) {
+        window.location = "/quiz/30b"
         return;
     }
     if (numQ == q31) {
